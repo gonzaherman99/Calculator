@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,900&display=swap');
+
+.gradient {
+  background-image:
+    linear-gradient(
+      to right, 
+     aqua, white
+    );
+    margin-top: 5%;
+}
+input[type=numbe] {
+    border-radius: 10px;
+    border-color: black;
+    padding: 4px;
+   
+}
+div.center {
+     display: block !important;
+      margin: 1.5%  0  1.5% 41.5%;
+}
+body {
+    font-family: Lato;
+    font-weight: 900;
+}
+div.regre {
+  margin-top: -4px;
+    margin-left: 10px;
+}
+h1 {
+    margin-top: 5px;
+   text-align: center;
+}
+div.row {
+    display: block;
+    text-align: center;
+}
+.row div {
+    border-radius: 100px;
+    font-size: 1.5rem;
+    padding: 20px;
+    margin: 5px;
+}
