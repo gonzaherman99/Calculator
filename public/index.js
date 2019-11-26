@@ -1,5 +1,5 @@
 var buttons = document.getElementById("1");
-buttons.addEventListener("click", topp); 
+buttons.addEventListener("click", getId); 
 
 var numbers = [];
 var numbers1 = [];
@@ -8,7 +8,7 @@ var numbers1 = [];
         console.log("Nel");
     }
 
-    function topp() {
+    function getId() {
     var id = this.id;
     if (numbers1[numbers1.length - 1] !== "-" && numbers1[numbers1.length - 1] !== "+" && numbers1[numbers1.length - 1] !== "/" && numbers1[numbers1.length - 1] !== "*" || id === "1" || id === "2" || id === "3" || id === "4" || id === "5" || id === "6" || id === "7" || id === "8" || id === "9" || id === "0") {
       numbers.push(id);
@@ -16,7 +16,7 @@ var numbers1 = [];
        for (var i = 0; i <= numbers1.length - 1; i++) {
       console.log(numbers1[i]);
       var result = document.getElementById("in");
-    result.value = numbers1.join("");
+      result.value = numbers1.join("");
        }
      } else {
          stop();
@@ -24,7 +24,7 @@ var numbers1 = [];
     }
      
         
-    function toppp() {
+    function eraseF() {
         numbers.splice(numbers.length - 1);
         for (var i = 0; i <= numbers.length ; i++) {
         document.getElementById("in").value = numbers.join("");
@@ -104,50 +104,50 @@ var numbers1 = [];
      }
 
 var buttons2 = document.getElementById("2");
-buttons2.addEventListener("click", topp);
+buttons2.addEventListener("click", getId);
 
 var buttons3 = document.getElementById("3");
-buttons3.addEventListener("click", topp);
+buttons3.addEventListener("click", getId);
 
 var buttons4 = document.getElementById("4");
-buttons4.addEventListener("click", topp);
+buttons4.addEventListener("click", getId);
 
 var buttons5 = document.getElementById("5");
-buttons5.addEventListener("click", topp);
+buttons5.addEventListener("click", getId);
 
 var buttons6 = document.getElementById("6");
-buttons6.addEventListener("click", topp);
+buttons6.addEventListener("click", getId);
 
 var buttons7 = document.getElementById("7");
-buttons7.addEventListener("click", topp);
+buttons7.addEventListener("click", getId);
 
 var buttons8 = document.getElementById("8");
-buttons8.addEventListener("click", topp);
+buttons8.addEventListener("click", getId);
 
 var buttons9 = document.getElementById("9");
-buttons9.addEventListener("click", topp);
+buttons9.addEventListener("click", getId);
 
 var buttons0 = document.getElementById("0");
-buttons0.addEventListener("click", topp);
+buttons0.addEventListener("click", getId);
 
 var buttonMas = document.getElementById("+");
-buttonMas.addEventListener("click", topp);
+buttonMas.addEventListener("click", getId);
 
 var buttonMas = document.getElementById("*");
-buttonMas.addEventListener("click", topp);
+buttonMas.addEventListener("click", getId);
 
 var buttonMas = document.getElementById("-");
-buttonMas.addEventListener("click", topp);
+buttonMas.addEventListener("click", getId);
 
 var buttonMas = document.getElementById("/");
-buttonMas.addEventListener("click", topp);
+buttonMas.addEventListener("click", getId);
 
 var punto = document.getElementById(".");
-punto.addEventListener("click", topp);
+punto.addEventListener("click", getId);
 
 
 var buttonBack = document.getElementById("back");
-buttonBack.addEventListener("click", toppp);
+buttonBack.addEventListener("click", eraseF);
 
 var buttonEqual =  document.getElementById("submit");
 buttonEqual.addEventListener("click", equalF);
